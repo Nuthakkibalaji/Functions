@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Handson-10(Functions)</title>
+</head>
+<style>
+    h2{
+        text-align: center;
+        text-decoration: underline;
+    }
+    pre{
+        background-color: cornflowerblue;
+        font-size: 15px;
+    }
+</style>
+<body>
+
+    <h2>JS Handson-10(Functions)</h2>
+    
+
+    <p><b>1. Create one function with zero parameter having a console statement;</b></p>
+
+    <pre>
+        function click(){
+            var x ="This is a zero parameter";
+            console.log(x);
+        }
+        click()
+    </pre>
+
+
+    <p><b>2.Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</b></p>
+
+    <pre>
+        function add(a,b){
+            console.log(a+b);
+        }
+        add(3,4)
+    </pre>
+
+    <p><b>3. Create one arrow function</b></p>
+
+    <pre>1.
+        var i = () =>{
+            var x = 21;
+            var girl = function () {
+                console.log(x);
+                var x = 20;
+               };
+            girl ();
+           
+           }
+       i()
+    </pre>
+
+    <pre>2.
+        var j = () =>{
+            var x = 21;
+            
+            console.log(x)
+            function girl() {
+                console.log(x);
+                var x = 20;
+            }
+            girl ();
+            }
+       j()
+    </pre>
+
+    <pre>3.
+        var x = 21;
+     a();
+     b();
+
+      function a() {
+    
+      x = 20;
+      console.log(x);
+      };
+      function b() {
+    
+      x = 40;
+     console.log(x);
+     };
+    </pre>
+
+    <p><b>4. Write a function that accepts parameter n and returns factorial of n</b></p>
+    <pre>function factorial(n) {
+        if (n == 0) return 1;
+        return n * factorial(n - 1);
+    }
+    
+    let num = 5;
+    console.log("Factorial of " + num + " is " + factorial(num));
+    </pre>
+
+    <script src="main.js"></script>
+</body>
+</html>
